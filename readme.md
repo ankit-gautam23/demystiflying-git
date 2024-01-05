@@ -16,3 +16,12 @@ $ git add FILENAME(Used to add specific files rather than adding everything)
 
 $ git commit -m "commit message"(This commits the added files to the repo and clean the repo for further use)
 
+
+Now we are done with the git thing we can, now we need to collaborate with real world to know this we need to go to Github, Gitlab or bitbucket, there we can create a repo which act as remote repository and then we can connect that remote with our local using git remote command
+
+$ git remote(just to check the remote repo name)
+$ git remote add origin REPO-URL(here origin is the name you give to ur remote repo and URL u get after creating the repo)
+$ git remote(just to check more detailed view of remote repo)
+$ git remote show origin(gives everything you need to know)
+
+$ git push REMOTE-REPO-NAME BRANCH-NAME(it syncs local files with the remote repo)
