@@ -195,3 +195,17 @@ In github we can create branches to work on our piece of code independent of wha
 - Use rebase command to add upstream changes on top of our personal work.
 
 > $ git rebase upstream/main
+
+# Git Reset
+
+- Case 1: file is insdie staging area: Git reset alone can move your file from staging area to current working directory
+
+> $ git reset
+
+- Case 2: File is committed: In such case we can use git reset command with the commit id which we can get by running git log command. Using the following command you will enter in the mixed mode where you will be moved to previous commit but files won't be deleted or changed. Head will be pointing to the previous commit.
+
+> git reset COMMIT-ID
+
+- Case 3: You wanna delete everything.
+
+> git reset --hard COMMIT-ID
