@@ -4,7 +4,7 @@ Some useful commands that needs to be there always to see everything works fine
 
 # Git Started
 - To check what version of git is installed
-> $ git --version   
+>   $ git --version
 - To initialize a local repo
 > $ git init
 $ git status(to check the status of your repo, files which are changed are acknowledged here)
