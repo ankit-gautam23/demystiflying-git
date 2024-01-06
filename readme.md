@@ -3,9 +3,10 @@ GIT & GITHUB BASIC TO ADVANCE
 Some useful commands that needs to be there always to see everything works fine 
 
 # Git Started
-
-$ git --version(to check if git is installed or not)
-$ git init(to initialize any repository)
+- To check what version of git is installed
+```$ git --version```
+- To initialize a local repo
+```$ git init```
 $ git status(to check the status of your repo, files which are changed are acknowledged here)
 
 git status plays a vital role when you create a {.gitignore} file which consist of files and directory names which you want to be excluded from being uploaded to public repo
@@ -73,4 +74,14 @@ When working on a repo and you don't wanna go for copying everything to the loca
 It doesn't have terminal to work on, it will ask you to open in codespaces on your computer to access the terminal.
 
 # Branching(Github Branches)
+
+In github we can create branches to work on our piece of code independent of what code is already running, or without disturbing the main code. Once you are done with the code on your branch you can merge that branch code to the main code.
+
+- You can create branch by following command
+
+$ git branch NEW-BRANCH-NAME
+
+- You can see the branches, the branch you are in will highlighted with the branch name you created
+
+$ git branch 
 
