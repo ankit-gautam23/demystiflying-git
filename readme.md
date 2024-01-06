@@ -2,7 +2,7 @@ GIT & GITHUB BASIC TO ADVANCE
 
 Some useful commands that needs to be there always to see everything works fine 
 
-- Git Started
+# Git Started
 
 $ git --version(to check if git is installed or not)
 $ git init(to initialize any repository)
@@ -40,6 +40,8 @@ Now we need to sync our local repo with the changes we did using UI on remote re
 $ git fetch(it will fetch and download the changes to the local done on remote repo. But it won't reflect in our local repo)
 $ git merge REMOTE-BRANCH-NAME(It will merge the changes done on remote repo branch with the local repo branch)
 
+# Fetch & Merge
+
 Fetching and merging can be a tedious task to perform when you are working on a frequently changing codebase. git pull command got you covered. you can use this command to fetch and merge all at once. 
 
 There are two ways to address this.
@@ -57,14 +59,18 @@ Here comes the most tedious thing, while using pull command there are two things
 - Your local repo should have clean working directory, it should ideally commit the changes you did or move it to stash area.
 - Your local repo and remote repo should not be changing same line. It creates merge conflicts.
 
-CLONING A REPO
+#Cloning a repo
 
 - This is part of copying the remote repo on your local system and then can use commands like pull to get the latest changes on that repo. Once remote repo is copied in the local we can use git log command to check the history of commits.
 
 $ git clone REMOTE-REPO-URL
 $ git log
 
-#Github Codespaces
+# Github Codespaces
 
 When working on a repo and you don't wanna go for copying everything to the local. Github provides you with a utility which looks like cloud based version of VS code. We can launch it by clicking period/dot(.)
+
+It doesn't have terminal to work on, it will ask you to open in codespaces on your computer to access the terminal.
+
+# Branching(Github Branches)
 
