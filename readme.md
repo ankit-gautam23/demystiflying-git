@@ -39,3 +39,20 @@ Now we need to sync our local repo with the changes we did using UI on remote re
 
 $ git fetch(it will fetch and download the changes to the local done on remote repo. But it won't reflect in our local repo)
 $ git merge REMOTE-BRANCH-NAME(It will merge the changes done on remote repo branch with the local repo branch)
+
+Fetching and merging can be a tedious task to perform when you are working on a frequently changing codebase. git pull command got you covered. you can use this command to fetch and merge all at once. 
+
+There are two ways to address this.
+
+$ git pull REMOTE-REPO-NAME BRANCH-NAME
+
+second option is where we don't need to mention the remote-repo-name and branch-name it is done when you push your code with -u flag which upstreams your remote branch priority and when you fire this command it exactly knows what and where to pick from.
+
+$ git push REMOTE-REPO-NAME BRANCH-NAME -u
+
+$ git pull
+
+Here comes the most tedious thing, while using pull command there are two things that needs to be taken care.
+
+- Your local repo should have clean working directory, it should ideally commit the changes you did or move it to stash area.
+- Your local repo and remote repo should not be changing same line.
