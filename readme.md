@@ -55,4 +55,16 @@ $ git pull
 Here comes the most tedious thing, while using pull command there are two things that needs to be taken care.
 
 - Your local repo should have clean working directory, it should ideally commit the changes you did or move it to stash area.
-- Your local repo and remote repo should not be changing same line.
+- Your local repo and remote repo should not be changing same line. It creates merge conflicts.
+
+CLONING A REPO
+
+- This is part of copying the remote repo on your local system and then can use commands like pull to get the latest changes on that repo. Once remote repo is copied in the local we can use git log command to check the history of commits.
+
+$ git clone REMOTE-REPO-URL
+$ git log
+
+#Github Codespaces
+
+When working on a repo and you don't wanna go for copying everything to the local. Github provides you with a utility which looks like cloud based version of VS code. We can launch it by clicking period/dot(.)
+
