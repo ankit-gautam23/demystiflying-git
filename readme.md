@@ -128,4 +128,70 @@ In github we can create branches to work on our piece of code independent of wha
 
 > $ git merge --abort
 
+# Fork 
 
+- Forking is wayy different than cloning, Cloning is the taking a copy of code from remote server to your local machine where as FOrking is a github thing where a copy of repo is made on your profile
+
+- After forking one can clone the repo on local as before and start working in it.
+
+- When you fork a repo, you have a link to original repo like clone but the best part is you can make that code as your own version and can write code to get things done moreover. The original repo is called as upstream repo from where we can get new updates made in original repository.
+
+# Pull Request
+
+- Pull request or merge request is something which address the same thing. It's like asking to look at my code and get it merged if it looks good to you.
+
+- It has several steps when it comes to contributing to another repo or another organization
+
+- Get yourself with a repo you wanna contribute on(very subjective to user).
+- Fork the repo to get that repo copied to your github repo
+- clone the repo in the local like we do for our own 
+
+> $ git clone REMOTE-REPO-URL
+
+- clone the repo which is copied to your github account not the original one, it is called upstream repo which is used to pull the changes when necessary.
+
+- next create a branch from it.
+
+> $ git branch BRANCH-NAME
+
+- checkout to the branch
+
+> $ git checkout BRANCH-NAME
+
+- or do both at once
+
+> $ git checkout -b BRANCH-NAME
+
+- do the changes 
+
+- add the files to the staging area
+
+> $ git add FILE-NAME
+
+- commit the changes
+
+> $ git commit -m "commit message"
+
+= or do everything with single command
+
+> $ git commit -am "commit message"
+
+- push to the remote repo
+
+> $ git push REMOTE-REPO-NAME BRANCH-NAME
+
+- As soon as we push our code we can see the compare and pull request button on our repo page in github. There we can read about the contribution guidelines and can generate pull request following the contribution guidelines.
+
+## Must know things when working with the remote repository which either belongs to you or someone else.
+
+- Always upstream the remote repo so you can pull the latest changes 
+
+> $ git remote add upstream REMOTE-REPO-URL
+
+- Use fetch command to fetch/download the changes on the upstream repo
+
+> $ git fetch upstream
+
+- Use rebase command to add upstream changes on top of our personal work.
+
+> $ git rebase upstream/main
