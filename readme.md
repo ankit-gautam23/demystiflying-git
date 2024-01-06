@@ -110,4 +110,22 @@ In github we can create branches to work on our piece of code independent of wha
 
 > $ git checkout -
 
-raising merge conflict
+# Merge Conflicts or Merge fails
+
+- Merge fails occurs when you are working on same code and the other person completed the code and asks you to merge his changes
+
+> $ git merge BRANCH-NAME
+
+- Here merge will fail if your current working directory has some uncommited things in it.
+
+> $ git commit -am "message"
+
+- Merge conflict occurs when more than one dev is working on same line of code and both have committed there work and now the owner wanna merge so one who is merging needs to either take his or other person changes. one command to see the difference is 
+
+> $ git diff
+
+- There is a possibility that the merge conflict is so huge at that time we can abort the merge by using following command
+
+> $ git merge --abort
+
+
