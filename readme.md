@@ -27,3 +27,15 @@ $ git remote(just to check more detailed view of remote repo)
 $ git remote show origin(gives everything you need to know)
 
 $ git push REMOTE-REPO-NAME BRANCH-NAME(it syncs local files with the remote repo)
+
+Now we can look at the UI part where we can see different commits id which can be used to differnce it made to the files after each commit. 
+
+In addition to this it is quite easy and handy that we can do changes from the github UI. But it will raise a commit ahead thing in the remote repo.
+
+Now we need to sync our local repo with the changes we did using UI on remote repo.
+
+- we need to fetch the changes
+- we need to merge the branches of our local and remote repo.
+
+$ git fetch(it will fetch and download the changes to the local done on remote repo. But it won't reflect in our local repo)
+$ git merge REMOTE-BRANCH-NAME(It will merge the changes done on remote repo branch with the local repo branch)
