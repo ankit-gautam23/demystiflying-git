@@ -102,3 +102,11 @@ In github we can create branches to work on our piece of code independent of wha
 
 > $ git checkout BRANCH-NAME
 
+- To create and checkout to a branch using one command
+
+> $ git checkout -b BRANCH-NAME
+ 
+- To checkout to previous branch you were in
+
+> $ git checkout -
+
