@@ -1,4 +1,4 @@
-GIT & GITHUB BASIC TO ADVANCE
+# GIT & GITHUB BASIC TO ADVANCE
 
 Some useful commands that needs to be there always to see everything works fine 
 
@@ -209,3 +209,19 @@ In github we can create branches to work on our piece of code independent of wha
 - Case 3: You wanna delete everything.
 
 > git reset --hard COMMIT-ID
+
+- NOTE: Git reset is good for working on local repo but not in remote because if we use ```--hard``` flag with the git reset command it will basically delete that commit and that commit will be lost.
+
+# Git Revert
+
+- When working on remote repo its safe to use ```git revert``` command rather than ```git reset``` because ```git revert``` command gives you back a commit id so that revert is never lost.
+
+> $ git revert COMMIT-ID
+
+# Git commit --amend
+
+- Most of the time we don't look at the staging area and run for running combined command ```git commit -am "commit msg"```, to fix this we can use --amend flag with the ```git commit``` command. 
+
+> $ git commit --amend -m "new message"
+
+- it even got you covered if you missed adding files to staging area, you can do so using the ```git add FILENAME``` command then you can use ```--amend``` ```--no-edit``` flags
