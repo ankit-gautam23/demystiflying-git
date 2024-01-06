@@ -111,4 +111,3 @@ In github we can create branches to work on our piece of code independent of wha
 > $ git checkout -
 
 raising merge conflict
-
