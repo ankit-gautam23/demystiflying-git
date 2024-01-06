@@ -4,10 +4,11 @@ Some useful commands that needs to be there always to see everything works fine
 
 # Git Started
 - To check what version of git is installed
->   $ git --version
+> $ git --version
 - To initialize a local repo
 > $ git init
-$ git status(to check the status of your repo, files which are changed are acknowledged here)
+- To check the status of your repo, files which are changed are acknowledged here
+> $ git status
 
 git status plays a vital role when you create a {.gitignore} file which consist of files and directory names which you want to be excluded from being uploaded to public repo
 
@@ -79,9 +80,25 @@ In github we can create branches to work on our piece of code independent of wha
 
 - You can create branch by following command
 
-$ git branch NEW-BRANCH-NAME
+> $ git branch NEW-BRANCH-NAME
 
 - You can see the branches, the branch you are in will highlighted with the branch name you created
 
-$ git branch 
+> $ git branch 
+
+- You can even delete a branch using flags along with command, but here is one crucial thing to understand the flag ```-d``` works in safe manner deleting branch which is not merged and not having any changes in it but ```-D``` will delete avoiding everything on the first place.
+
+> $ git branch -d BRANCH-NAME
+
+> $ git branch -D BRANCH-NAME
+
+- You can even change the name of branch you are in using following command
+
+> $ git branch -m BRANCH-NEW-NAME
+
+# Switching Branches
+
+- To switch to another branches, we can use following command
+
+> $ git checkout BRANCH-NAME
 
