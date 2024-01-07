@@ -225,3 +225,9 @@ In github we can create branches to work on our piece of code independent of wha
 > $ git commit --amend -m "new message"
 
 - it even got you covered if you missed adding files to staging area, you can do so using the ```git add FILENAME``` command then you can use ```--amend``` ```--no-edit``` flags
+
+> $ git add .
+
+- Post this you can look for adding these files to same commit which you did before. For that you need to use ```--no-edit``` flag along with ```git commit --amend``` command.
+
+> $ git commit --amend --no-edit
