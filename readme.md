@@ -1,8 +1,8 @@
-# GIT & GITHUB BASIC TO ADVANCE
+## GIT & GITHUB BASIC TO ADVANCE
 
 Some useful commands that needs to be there always to see everything works fine 
 
-# Git Started
+## Git Started
 - To check what version of git is installed
 > $ git --version
 - To initialize a local repo
@@ -42,7 +42,7 @@ Now we need to sync our local repo with the changes we did using UI on remote re
 > $ git fetch(it will fetch and download the changes to the local done on remote repo. But it won't reflect in our local repo)
 > $ git merge REMOTE-BRANCH-NAME(It will merge the changes done on remote repo branch with the local repo branch)
 
-# Fetch & Merge
+## Fetch & Merge
 
 Fetching and merging can be a tedious task to perform when you are working on a frequently changing codebase. git pull command got you covered. you can use this command to fetch and merge all at once. 
 
@@ -61,20 +61,20 @@ Here comes the most tedious thing, while using pull command there are two things
 - Your local repo should have clean working directory, it should ideally commit the changes you did or move it to stash area.
 - Your local repo and remote repo should not be changing same line. It creates merge conflicts.
 
-#Cloning a repo
+##Cloning a repo
 
 - This is part of copying the remote repo on your local system and then can use commands like pull to get the latest changes on that repo. Once remote repo is copied in the local we can use git log command to check the history of commits.
 
 > $ git clone REMOTE-REPO-URL
 > $ git log
 
-# Github Codespaces
+## Github Codespaces
 
 When working on a repo and you don't wanna go for copying everything to the local. Github provides you with a utility which looks like cloud based version of VS code. We can launch it by clicking period/dot(.)
 
 It doesn't have terminal to work on, it will ask you to open in codespaces on your computer to access the terminal.
 
-# Branching(Github Branches)
+## Branching(Github Branches)
 
 In github we can create branches to work on our piece of code independent of what code is already running, or without disturbing the main code. Once you are done with the code on your branch you can merge that branch code to the main code.
 
@@ -96,7 +96,7 @@ In github we can create branches to work on our piece of code independent of wha
 
 > $ git branch -m BRANCH-NEW-NAME
 
-# Switching Branches
+## Switching Branches
 
 - To switch to another branches, we can use following command
 
@@ -110,7 +110,7 @@ In github we can create branches to work on our piece of code independent of wha
 
 > $ git checkout -
 
-# Merge Conflicts or Merge fails
+## Merge Conflicts or Merge fails
 
 - Merge fails occurs when you are working on same code and the other person completed the code and asks you to merge his changes
 
@@ -128,7 +128,7 @@ In github we can create branches to work on our piece of code independent of wha
 
 > $ git merge --abort
 
-# Fork 
+## Fork 
 
 - Forking is wayy different than cloning, Cloning is the taking a copy of code from remote server to your local machine where as FOrking is a github thing where a copy of repo is made on your profile
 
@@ -136,7 +136,7 @@ In github we can create branches to work on our piece of code independent of wha
 
 - When you fork a repo, you have a link to original repo like clone but the best part is you can make that code as your own version and can write code to get things done moreover. The original repo is called as upstream repo from where we can get new updates made in original repository.
 
-# Pull Request
+## Pull Request
 
 - Pull request or merge request is something which address the same thing. It's like asking to look at my code and get it merged if it looks good to you.
 
@@ -212,13 +212,13 @@ In github we can create branches to work on our piece of code independent of wha
 
 - NOTE: Git reset is good for working on local repo but not in remote because if we use ```--hard``` flag with the git reset command it will basically delete that commit and that commit will be lost.
 
-# Git Revert
+## Git Revert
 
 - When working on remote repo its safe to use ```git revert``` command rather than ```git reset``` because ```git revert``` command gives you back a commit id so that revert is never lost.
 
 > $ git revert COMMIT-ID
 
-# Git commit --amend
+## Git commit --amend
 
 - Most of the time we don't look at the staging area and run for running combined command ```git commit -am "commit msg"```, to fix this we can use --amend flag with the ```git commit``` command. 
 
@@ -231,3 +231,27 @@ In github we can create branches to work on our piece of code independent of wha
 - Post this you can look for adding these files to same commit which you did before. For that you need to use ```--no-edit``` flag along with ```git commit --amend``` command.
 
 > $ git commit --amend --no-edit
+
+## Stash
+
+- Stash is about saving your work without actually commiting your work to remote repo and is very useful in long run when you actually need to get your working repo clean for pull/merge operations.
+
+- Stash maintains an array of your code changes when you exactly run ```git stash``` command. 
+
+> $ git stash 
+
+- To apply your stashed changes you can run the following command:
+
+> $ git stash pop
+
+- But pop command will apply the most recent changes that we did. So let's give stash a name, to assign a name use following command.
+
+> $ git stash save STASH-NAME
+
+- To get the list of stash your local repo is holding, use following command:
+
+> $ git stash list
+
+- To apply the stash you need to run floowing command along with the number you see which is nothing but the stash index:
+
+> $ git stash apply STASH-INDEX-NUMBER
