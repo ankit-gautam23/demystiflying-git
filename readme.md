@@ -267,3 +267,5 @@ In github we can create branches to work on our piece of code independent of wha
 - Squash is a strategy that one could follow to merge commits as one once everything is done. Moreover, we can utilize the ```git rebase``` command with ```--interactive``` flag to achive so.
 
 > $ git rebase main --interactive
+
+- It will make you enter in the interactive mode, where you can see the commits you did followed by PICK, The command you wanna squash, change ```PICK``` to ```SQUASH```
