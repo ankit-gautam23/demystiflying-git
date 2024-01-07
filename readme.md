@@ -255,3 +255,15 @@ In github we can create branches to work on our piece of code independent of wha
 - To apply the stash you need to run floowing command along with the number you see which is nothing but the stash index:
 
 > $ git stash apply STASH-INDEX-NUMBER
+
+## Rebase
+
+- Rebase is very powerful when you don't wanna merge things up as you are working on your branch. You can sync with the main branch by rebasing it over your branch. All it will do it will rewrite the history of commits as you started from where you rebased it. That means you don't need to do merge commits
+
+> $ git rebase master/main(depend on your master branch name, use any one)
+
+## Squash
+
+- Squash is a strategy that one could follow to merge commits as one once everything is done. Moreover, we can utilize the ```git rebase``` command with ```--interactive``` flag to achive so.
+
+> $ git rebase main --interactive
