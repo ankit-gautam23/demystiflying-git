@@ -269,3 +269,5 @@ In github we can create branches to work on our piece of code independent of wha
 > $ git rebase main --interactive
 
 - It will make you enter in the interactive mode, where you can see the commits you did followed by PICK, The command you wanna squash, change ```PICK``` to ```SQUASH```
+
+## Github Actions
