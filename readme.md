@@ -271,3 +271,8 @@ In github we can create branches to work on our piece of code independent of wha
 - It will make you enter in the interactive mode, where you can see the commits you did followed by PICK, The command you wanna squash, change ```PICK``` to ```SQUASH```
 
 ## Github Actions
+
+- Actions are the part of github which can be setted up manually using bunch of codes as well as some already templates are written which could be used for getting the work done. 
+
+- Actions are the reusable piece of codes that can be used for creating workflows for your project. 
+
