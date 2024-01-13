@@ -12,9 +12,9 @@ Some useful commands that needs to be there always to see everything works fine
 - To check the status of your repo, files which are changed are acknowledged here
 > $ git status
 
-git status plays a vital role when you create a {.gitignore} file which consist of files and directory names which you want to be excluded from being uploaded to public repo
+```git status``` plays a vital role when you create a {.gitignore} file which consist of files and directory names which you want to be excluded from being uploaded to public repo
 
-STAGING: a very essential which is a must to know, a repo is just a snapshot, one need to add files or onjects before we commit it. It is where files are added before this, files remains untracked.
+## STAGING: a very essential which is a must to know, a repo is just a snapshot, one need to add files or onjects before we commit it. It is where files are added before this, files remains untracked.
 
 > $ git add .(It will add all the untracked files to staging area)
 > $ git reset .(It will take down the added files back to untracked way)
@@ -36,7 +36,7 @@ Now we can look at the UI part where we can see different commits id which can b
 
 In addition to this it is quite easy and handy that we can do changes from the github UI. But it will raise a commit ahead thing in the remote repo.
 
-Now we need to sync our local repo with the changes we did using UI on remote repo.
+### Now we need to sync our local repo with the changes we did using UI on remote repo.
 
 - we need to fetch the changes
 - we need to merge the branches of our local and remote repo.
@@ -58,12 +58,12 @@ second option is where we don't need to mention the remote-repo-name and branch-
 
 > $ git pull
 
-Here comes the most tedious thing, while using pull command there are two things that needs to be taken care.
+### Here comes the most tedious thing, while using pull command there are two things that needs to be taken care.
 
 - Your local repo should have clean working directory, it should ideally commit the changes you did or move it to stash area.
 - Your local repo and remote repo should not be changing same line. It creates merge conflicts.
 
-##Cloning a repo
+## Cloning a repo
 
 - This is part of copying the remote repo on your local system and then can use commands like pull to get the latest changes on that repo. Once remote repo is copied in the local we can use git log command to check the history of commits.
 
