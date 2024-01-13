@@ -1,5 +1,7 @@
 ## GIT & GITHUB BASIC TO ADVANCE
 
+If you know the basics click here to go to [Advance Git Commands(Git hacks)](./GitProTips.md)
+
 Some useful commands that needs to be there always to see everything works fine 
 
 ## Git Started
@@ -275,5 +277,7 @@ In github we can create branches to work on our piece of code independent of wha
 - Actions are the part of github which can be setted up manually using bunch of codes as well as some already templates are written which could be used for getting the work done. 
 
 - Actions are the reusable piece of codes that can be used for creating workflows for your project. 
+
+
 
 
