@@ -84,6 +84,34 @@ second option is where we don't need to mention the remote-repo-name and branch-
 > $ git clone REMOTE-REPO-URL
 > $ git log
 ```
+
+- There are two main methods for cloning a private repo: using HTTPS with a personal access token (PAT) or using SSH.  Here's a breakdown of both methods:
+
+#### Using HTTPS with a Personal Access Token (PAT):
+
+Generate a PAT: You'll need to create a PAT on your GitHub account. Go to your account settings, navigate to "Developer settings" and then "Personal access tokens". Choose a descriptive name for the token and make sure to grant it "repo" access.
+
+Clone the repository:  Open your terminal and navigate to the directory where you want to clone the repository. Use the following command, replacing <username>, <token>, and <repo_url> with your information:
+
+```git clone https://<username>:<token>@<repo_url>.git```
+Your GitHub username and the PAT will be used for authentication.
+
+#### Using SSH:
+
+Generate SSH Key Pair: You'll need to generate an SSH key pair on your local machine. There are tutorials available online for specific operating systems.
+
+Add Public Key to GitHub: Once you have your SSH key pair, add the public key to your GitHub account settings in the "SSH and GPG keys" section.
+
+Clone the repository:  Use the following command in your terminal, replacing <repo_url> with the SSH URL of the repository (found in your GitHub repo settings under "Code" -> "SSH"):
+
+```git clone <repo_url>```
+
+#### Choosing a Method:
+
+Using HTTPS with a PAT is generally the simpler method, especially for beginners.
+SSH offers a more secure connection, but requires additional setup.
+
+
 ## Github Codespaces
 
 When working on a repo and you don't wanna go for copying everything to the local. Github provides you with a utility which looks like cloud based version of VS code. We can launch it by clicking period/dot(.)
